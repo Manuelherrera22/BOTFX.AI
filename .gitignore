@@ -1,0 +1,21 @@
+# Dependencies
+.venv/
+node_modules/
+
+# Source/dev files (not needed for production)
+BOTFWEB.pdf
+page_1.jpg
+extract_pdf.py
+botfx_logo.jpg
+logo_transparent.png
+logo botfx act  1000x1000px completo.png
+logo botfx act VIP 1000x1000px completo.png
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
