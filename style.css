@@ -114,15 +114,16 @@ strong {
 .nav-links a {
     font-size: 0.8rem;
     font-weight: 400;
-    color: var(--text-white);
-    text-decoration: none;
-    transition: all 0.3s ease;
+    color: #a6a6a6;
+    text-decoration: none !important;
+    transition: color 0.3s ease;
 }
 .nav-links a:hover {
-    color: var(--primary);
-    text-decoration: underline;
+    color: #fb6422 !important;
+    text-decoration: underline !important;
     text-underline-offset: 6px;
     text-decoration-thickness: 2px;
+    text-decoration-color: #fb6422 !important;
 }
 
 /* Buttons */
