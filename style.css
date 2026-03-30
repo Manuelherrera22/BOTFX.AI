@@ -114,12 +114,11 @@ strong {
 .nav-links a {
     font-size: 0.8rem;
     font-weight: 400;
-    color: var(--text-gray);
+    color: var(--text-white);
+    text-decoration: none;
+    transition: all 0.3s ease;
 }
 .nav-links a:hover {
-    color: var(--text-white);
-}
-.nav-links a.active {
     color: var(--primary);
     text-decoration: underline;
     text-underline-offset: 6px;
