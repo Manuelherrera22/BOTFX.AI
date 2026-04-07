@@ -653,14 +653,33 @@ strong {
 
 /* Testimonials */
 .testimonials-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    column-count: 3;
+    column-gap: 20px;
     width: 100%;
     text-align: left;
 }
 .testimonial-card {
     padding: 35px 30px;
+    break-inside: avoid;
+    margin-bottom: 20px;
+    display: inline-block;
+    width: 100%;
+}
+.testimonial-video-card {
+    padding: 0;
+    overflow: hidden;
+}
+.testimonial-video {
+    width: 100%;
+    display: block;
+    border-radius: 20px 20px 0 0;
+    background: #111;
+    min-height: 200px;
+    object-fit: cover;
+}
+.testimonial-video-card .user-info {
+    padding: 20px 25px;
+    border-top: none;
 }
 .stars {
     display: flex;
