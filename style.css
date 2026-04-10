@@ -275,9 +275,9 @@ strong {
 
 .hero-video-box {
     width: 90%;
-    max-width: 1000px;
+    max-width: 380px;
+    aspect-ratio: 9 / 16;
     position: relative;
-    padding-top: 48%; 
     border-radius: 20px;
     background: #060606;
     border: 2px solid var(--primary);
