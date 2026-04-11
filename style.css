@@ -658,16 +658,19 @@ strong {
 
 /* Testimonials */
 .testimonials-grid {
-    column-count: 3;
-    column-gap: 20px;
+    display: flex;
+    gap: 20px;
     width: 100%;
-    text-align: left;
+    align-items: flex-start;
+}
+.testimonial-col {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
 }
 .testimonial-card {
     padding: 35px 30px;
-    break-inside: avoid;
-    margin-bottom: 20px;
-    display: inline-block;
     width: 100%;
 }
 .testimonial-video-card {
@@ -841,14 +844,26 @@ strong {
 @media (max-width: 992px) {
     .ecosistema-grid, .pricing-grid { grid-template-columns: 1fr; }
     .bento-wide, .bento-narrow { grid-column: span 6; }
-    .testimonials-grid { grid-template-columns: 1fr; }
+    .testimonials-grid { flex-direction: column; }
+    .testimonial-col { width: 100%; }
     .hero-title { font-size: 5.5rem; }
     .hero-stats { gap: 40px; }
 }
 @media (max-width: 768px) {
     .nav-links { display: none; }
-    .hero-title { font-size: 4rem; }
-    .cta-title { font-size: 4rem; }
+    .hero { padding-top: 130px; }
+    .hero-title { font-size: 3.2rem; }
+    .hero-cta { flex-direction: column; gap: 20px; width: 100%; }
+    .hero-cta .btn { width: 100%; max-width: 280px; justify-content: center; }
+    .hero-stats { grid-template-columns: 1fr 1fr; display: grid; gap: 30px 15px; }
+    .stat-value { font-size: 3rem; }
+    .section-padding { padding: 60px 15px; }
+    .section-title { font-size: 2.2rem; }
+    .title-condensed { font-size: 3rem; }
+    .cta-title { font-size: 3rem; }
+    .card-dark, .pricing-card, .bento-card, .testimonial-card { padding: 30px 20px; }
+    .bento-third { grid-column: span 6; }
     .footer-bottom { flex-direction: column; gap: 20px; text-align: center; }
     .footer-bottom p { text-align: center; }
+    .footer-links { flex-wrap: wrap; justify-content: center; gap: 15px; }
 }
